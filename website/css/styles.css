@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400&display=swap");
+
+:root {
+  --gradient1: #ffbeab;
+  --gradient2: #f45d63;
+  --headingText: "Lato" sans-serif;
+  --textColor: #000022;
+  --contentBg: #c5f0f8;
+  --paragraphText: "Open Sans";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(#ffbeab, #f45d63);
+  font-size: 20px;
+  padding: 20px;
+  height: 100vh;
+}
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1,
+h3 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: var(--textColor);
+}
+
+h1.headingText {
+  font-weight: 700;
+}
+
+.contentWrap {
+  margin-top: 20px;
+  background-color: rgba(197, 240, 248, 0.95);
+  max-width: 500px;
+  width: 100%;
+  min-height: 650px;
+  border-radius: 15px;
+  font-family: var(--paragraphText);
+  padding: 1em 3.8em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.2);
+}
+.cta {
+  margin: 0 auto;
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #f8767b;
+  color: var(--textColor);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  border: none;
+  padding: 9px 27px;
+  border-radius: 7px;
+  font-size: 1em;
+  box-shadow: 0px 0px 0px 1px #f8767b;
+  transition: all 0.3s linear;
+  margin: 0.5em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(197, 240, 248, 0.95);
+  /* border: 3px solid #f8767b; */
+  box-shadow: 0px 0px 0px 3px #f8767b;
+}
+
+.fieldset {
+  position: relative;
+}
+
+#zip,
+#feelings {
+  background-color: var(--gradient1);
+  border: none;
+  width: 350px;
+  margin-bottom: 5px;
+  box-shadow: none;
+  border-radius: 7px;
+}
+
+input[type="text"] {
+  height: 30px;
+  padding: 20px;
+}
+
+textarea {
+  padding: 15px;
+  font-family: var(--paragraphText);
+  font-size: 0.7em;
+}
+
+input:focus {
+  border: none;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  line-height: 18px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+::placeholder {
+  color: var(--textColor);
+  font-family: var(--paragraphText);
+  text-align: left;
+  font-size: 13px;
+}
+
+.entryHolder {
+  background-color: var(--gradient1);
+  width: 350px;
+  margin-top: 5px;
+  font-family: var(--paragraphText);
+  color: var(--textColor);
+  border-radius: 7px;
+  font-size: 0.9em;
+}
+#date,
+#temp,
+#content {
+  padding: 15px;
+}

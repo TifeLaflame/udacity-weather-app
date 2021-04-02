@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <title>Weather Journal App</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="heading">
+      <h1 class="headingText">Weather Journal App</h1>
+      <div class="separator"></div>
+    </div>
+    <div class="contentWrap">
+      <div>
+        <p class="errorMsg"></p>
+      </div>
+      <div class ="fieldset zip">
+        <label for="zip">Enter Zipcode here</label>
+        <input type="text" id="zip" placeholder="e.g 94040">
+      </div>
+      <div class ="fieldset feel">
+        <label for="feelings">How are you feeling today?</label>
+        <textarea class= "myInput" id="feelings" placeholder="" rows="9" cols="50"></textarea>
+      </div>
+      <div class="cta">
+        <button id="generate" type="submit">Generate</button>
+      </div>
+      <div class ="holder entry">
+        <h3 class = "title">Most Recent Entry</h3>
+        <div class="entryHolder">
+          <div id="date"></div> 
+          <div id="temp"></div>
+          <div id="content"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
